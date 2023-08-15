@@ -1,5 +1,5 @@
 <template>
-<body >
+<body>
      <h1>Destination</h1>
 </body>
  
@@ -13,6 +13,9 @@ export default {
 
 <style scoped>
 body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background-image: url(../assets/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center center;
