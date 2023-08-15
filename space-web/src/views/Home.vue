@@ -1,7 +1,7 @@
 <template>
-
-  <h1>Home Alone</h1>
-  
+  <body class="body">
+     
+  </body>
 </template>
 
 <script>
@@ -17,11 +17,15 @@ export default {
 </script>
 
 <style scoped>
-nav {
-  margin: 2rem 0rem 1rem 9rem;
-  /* trbl */
-  padding: 30px;
-  background-color: #2c3e50;
-  left: 0;
+
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../assets/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
 </style>
