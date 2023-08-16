@@ -25,19 +25,18 @@ background-color: rgba(158, 172, 188, 0.457);
 }
 nav a {
   color: white;
-  padding: 1rem;
+  padding: 1.3rem;
  text-decoration: none;
+ font-size: 14px;
 }
 nav a:hover {
   color: lightgray;
  
 }
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
   text-decoration: underline 2px;
+  text-underline-offset: 25px;
 }
-nav a.router-link-exact-active hr {
-  color: #ef630c;
-  
-}
+
 </style>
