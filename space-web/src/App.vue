@@ -1,5 +1,6 @@
 <template>
 <div class="content">
+  <img class="icon" src= "./assets/meteor-solid.svg">
 <Nav/>
 <hr>
   <router-view/>
@@ -39,6 +40,13 @@ hr{
   width: 30rem;
   opacity: 0.3;
   border: 0.3px solid white;
+}
+.icon{
+ position: fixed;
+ width:45px;
+ color: white;
+ padding: 0;
+ margin: 2rem 4rem 2rem -38rem;
 }
 /* .body{
   height: 100vh;
