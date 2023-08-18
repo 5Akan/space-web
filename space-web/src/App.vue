@@ -1,8 +1,10 @@
 <template>
 <div class="content">
-  <img class="icon" src= "./assets/meteor-solid.svg">
-<Nav/>
-<hr>
+  <div class="use">
+    <img class="icon" src= "./assets/meteor-solid.svg">
+    <Nav/>
+  </div>
+
   <router-view/>
 </div>
 
@@ -33,20 +35,18 @@ body{
 }
 .content{
   margin-top: 0;
+
 }
-hr{
-  position: fixed;
-  margin: 4rem  1rem  4rem  10rem;
-  width: 30rem;
-  opacity: 0.3;
-  border: 0.3px solid white;
+.use{
+  display: flex;
 }
 .icon{
- position: fixed;
- width:45px;
+ position: absolute;
+ width:47px;
  color: white;
  padding: 0;
- margin: 2rem 4rem 2rem -38rem;
+ margin: 2rem 4rem 2rem 3rem;
+ /* trbl */
 }
 /* .body{
   height: 100vh;
