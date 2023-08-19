@@ -7,8 +7,8 @@
               <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
               <span id="show-span" @click="showSpecificDiv(3)"  :class = "{active:showDiv ===3}">Show 3</span>
           </div>  
-        
-        <div v-if="showDiv ===1" class="contain">
+        <transition name="fade">
+          <div v-if="showDiv ===1" class="contain">
      
           <img src="../assets/mars-18088.png" alt="" srcset="">
           <div class="writeup">
@@ -26,8 +26,9 @@
               </div>
           </div>
         </div>
-
-        <div v-else-if="showDiv ===2" class="contain">
+        </transition>
+        <transition name="fade">
+         <div v-if="showDiv ===2" class="contain">
         <img src="../assets/moon-10061.png" alt="" srcset="">
          <div class="writeup">
             <h1> MOON</h1>
@@ -45,10 +46,12 @@
           </div> 
          </div>  
           </div>
+        </transition>
+<!--        
         <div v-else-if="showDiv ===3" class="contain">
           Checking 3
 
-        </div>
+        </div> -->
       </div>
     </div>
     
@@ -71,7 +74,7 @@ setup(){
 <style scoped>
 html,body{
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start;  /* For pushing an elemnt when reducing browser*/
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -82,13 +85,18 @@ html,body{
     background-size: cover;
     align-items: center;
 }
-
+.fade-enter-active, .fade-leave-active{
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to{
+  opacity:0;
+}
 img{
   /* margin-left: 4rem; */
   padding: 0;
   width: 25rem;
   height: 25rem;
-  margin-left:auto;
+  margin-left:auto; /* Allows image to shift to left due to justify content: flex start */
 }
 .container{
   position: fixed;
