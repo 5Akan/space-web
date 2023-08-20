@@ -89,6 +89,7 @@ html,body{
   transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to{
+  transition: opacity 0.5s;
   opacity:0;
 }
 img{
