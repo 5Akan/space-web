@@ -3,11 +3,11 @@
     <div class="container">
       <div class="nav">
           <div class="show">
-              <span id="show-span"  @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
+              <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
               <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
-              <span id="show-span" @click="showSpecificDiv(3)"  :class = "{active:showDiv ===3}">Show 3</span>
+              <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">Show 3</span>
           </div>  
-        <transition name="fade">
+        <transition name="fade" mode="out-in">
           <div v-if="showDiv ===1" class="contain">
      
           <img src="../assets/mars-18088.png" alt="" srcset="">
@@ -26,9 +26,7 @@
               </div>
           </div>
         </div>
-        </transition>
-        <transition name="fade">
-         <div v-if="showDiv ===2" class="contain">
+         <div v-else-if="showDiv ===2" class="contain">
         <img src="../assets/moon-10061.png" alt="" srcset="">
          <div class="writeup">
             <h1> MOON</h1>
@@ -47,6 +45,7 @@
          </div>  
           </div>
         </transition>
+        
 <!--        
         <div v-else-if="showDiv ===3" class="contain">
           Checking 3
@@ -85,12 +84,19 @@ html,body{
     background-size: cover;
     align-items: center;
 }
-.fade-enter-active, .fade-leave-active{
-  transition: opacity 0.5s;
+.fade-enter-active {
+  transition:all 0.5s ease;
 }
-.fade-enter, .fade-leave-to{
-  transition: opacity 0.5s;
+.fade-leave-active{
+  transition:all 0.5s ease-out;
+}
+.fade-enter-from {
   opacity:0;
+  transform:translateY(80px) ;
+}
+.fade-leave-to{
+    opacity:0;
+  transform:translateY(-80px) ;
 }
 img{
   /* margin-left: 4rem; */
