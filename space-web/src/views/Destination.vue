@@ -104,8 +104,10 @@ setup(){
 
 <style scoped>
 html,body{
-    display: flex;
-    justify-content: flex-start;  /* For pushing an elemnt when reducing browser*/
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: flex-start;  For pushing an elemnt when reducing browser */
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -144,7 +146,7 @@ img{
    /* margin-left:auto ; */
   width: 80%;
   height: 25rem;
-  margin: 25rem 1rem 20rem 8rem;
+  margin: 10rem 0rem 0rem 0rem;
   /* trbl */
   color: white;
   /* background: grey;  */
