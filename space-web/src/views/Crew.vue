@@ -4,8 +4,8 @@
         <div class="hold">
     <transition name = "fade" mode="out-in">
         <div v-if= "activeDiv ===1" class="doo">
-           <h2>Flight Engineer</h2>
-           <h1>Anousheh Ansari</h1> 
+           <h2>FLIGHT ENGINEER</h2>
+           <h1>ANOUSHEH ANSARI</h1> 
                 <p>
                 Anousheh Ansari is an Iranian American engineer
                 and co-founder of Prodea Systems. Ansari was the
@@ -14,25 +14,27 @@
                 </p>
         </div>
         <div v-else-if= "activeDiv ===2" class="doo">
-            <h2>Commander Douglas</h2>
-             <h1>Hurley Douglas Gerald</h1>
+            <h2>COMMANDER DOUGLAS</h2>
+             <h1>HURLEY DOUGLAS GERALD</h1>
+             <p>
               Hurley is an American engineer, former Marine Corps pilot and
               former NASA astronaut. He launched into space for the third
               time as commander of Crew Dragon Demo-2.
+             </p>
         </div>
         <div v-else-if= "activeDiv ===3" class="doo">
-            <h2>
-                Mission Specialist 
-            </h2>
-            <h1>Mark Shuttleworth </h1>
+            <h2>MISSION SPECIALIST</h2>
+            <h1>MARK SHUTTLEWORTH </h1>
+            <p>
             Mark Richard Shuttleworth is the founder and CEO of Canonical, 
             the company behind the Linux-based Ubuntu operating system. 
             Shuttleworth became the first South African to travel to space
              as a space tourist.
+            </p>
         </div>
         <div v-else-if= "activeDiv ===4" class="doo">
-            <h2>Pilot</h2>
-           <h1>Victor Glover</h1>
+            <h2>PILOT</h2>
+           <h1>VICTOR GLOVER</h1>
            <p>
              Pilot on the first operational flight of the SpaceX Crew Dragon
             to the International Space Station. 
@@ -98,15 +100,30 @@ export default {
   
 }
 .giant{
-    margin: 0;
-    background-color: orange;
+    margin: 12rem  0rem  0rem  0rem;
+    /* background-color: orange; */
     width: 70rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
     /* margin-right: auto;
     margin-left: auto;
      */
+}
+h1{
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin:1rem  0rem  3rem 0rem;
+
+}
+p{
+    /* background-color: aqua; */
+    width: 26.5rem;
+    line-height: 25px;
+    margin:0rem  0rem  0rem 0rem;
+
+
 }
 /* .fade-enter-active {
   transition:all 0.5s ease;
@@ -127,12 +144,12 @@ export default {
     margin: 0; 
 } 
 .pins{
-    margin: 5px;
+    margin: 8px 10px 8px 8px;
     position: relative;
-    width: 0.5rem;
-    height: 0.5rem;
     background-color: grey;
     border-radius: 50%;
+    padding: 6.5px;
+    cursor: pointer;
 }
 .active{
     background-color: white;
@@ -140,16 +157,17 @@ export default {
 .hold{
     /* flex: 1; */
     /* margin-right: calc(0.5vw + 5px); */
-    background-color: lightseagreen;
-    width: 20rem;
-   height: 25rem;
+    /* background-color: lightseagreen; */
+    width: 35rem;
+   height:25rem;
    /* margin: 15rem 1rem 0rem 0rem; */
 }
 .doo{
     
-    width: 13rem;
-    height: 12rem;
-    background-color: aliceblue;
+    width: 35rem;
+   height:22rem;
+    /* background-color: aliceblue; */
+    text-align: left;
 }
 .our-image{
     align-items: center;
