@@ -20,7 +20,7 @@
                 </p>
             </article>
             <article v-else-if="showDiv===2">
-                <h5> The terminology... </h5>
+                <h4>The terminology...</h4>
                 <h1>SPACE CAPSULE</h1>
                 <p>
                     A space capsule is an often-crewed spacecraft that uses
@@ -32,7 +32,7 @@
                 </p>
             </article>
             <article v-else-if="showDiv===3">
-                <h6>The terminology...</h6>
+                <h4>The terminology...</h4>
                 <h1>SPACEPORT</h1>
                 <p>
                     A spaceport or cosmodrome is a site for launching 
@@ -88,28 +88,53 @@ html,body{
 }
 .contain{
     margin-top: 7rem;
+    /* padding-left: 5rem; */
     width: 100%;
     height: 34rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(14, 18, 18);
+    color: white;
+    /* background-color: rgb(14, 18, 18); */
+    
 }
 .write-up{
-    width: 36rem;
+    display: flex;
+    width: 35rem;
     height: 21rem;
-    margin: 0rem 0rem 0rem 0rem;
-    background-color: aquamarine;
+    margin: 0rem -4rem 0rem 2rem;
+    text-align: left;
+    /* background-color: aquamarine; */
+}
+h1{
+    margin: 0.3rem 0rem 1.8rem 0rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+h4{
+    margin: 2.7rem 0rem 0rem 0rem;
+    font-size: 16px;
+}
+p{
+    width: 24rem;
+    height: 11rem;
+    display: flex;
+    /* background-color: wheat; */
+    font-size: 16px;
+    line-height: 23px;
 }
 .all-span{
-    display: inline-block;
-    margin: 0rem 0rem 0rem 10rem;
-    background-color: rgb(77, 75, 75);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-right: 1rem;
+    /* background-color: rgb(77, 75, 75); */
 }
 span{
     display: flex;
     color: white;
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
     position: relative;
     border-radius: 50%;
     width: 4.5rem;
@@ -124,6 +149,10 @@ span:hover{
     color: rgba(21, 14, 14, 0.922);
     background-color: rgb(154, 154, 160);
 }
+.active{
+    background-color: white;
+    color: black;
+}
 .fade-enter-active {
   transition:all 0.5s ease;
 }
@@ -132,18 +161,19 @@ span:hover{
 }
 .fade-enter-from {
   opacity:0;
-  transform:translateY(80px) ;
+  transform:translateX(-80px) ;
 }
 .fade-leave-to{
     opacity:0;
-  transform:translateY(80px) ;
+  transform:translateX(80px) ;
 }
 
 .images{
-    margin: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 4rem;
    
 }
 .image{
+    margin: 0;
     width: 29rem;
     width: 29rem;
 }
