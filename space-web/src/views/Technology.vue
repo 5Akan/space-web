@@ -1,5 +1,8 @@
 <template>
 <body>
+     <div class="header">
+     <p id="num">03</p><p id="head">SPACE LAUNCH 101</p>
+   </div>
     <div class="contain">
         <div class="all-span">
             <span @click="showSpecificDiv(1)" :class= "{active:showDiv===1}">1</span>
@@ -11,7 +14,7 @@
             <article v-if="showDiv===1">
                 <h4>The terminology...</h4>
                 <h1>LAUNCH VEHICLE</h1>
-                <p>
+                <p class="write">
                      A launch vehicle or carrier rocket is a rocket-propelled
                      vehicle used to carry a payload from Earth's surface to space,
                      usually to Earth orbit or beyond. Our WEB-X carrier rocket is
@@ -22,7 +25,7 @@
             <article v-else-if="showDiv===2">
                 <h4>The terminology...</h4>
                 <h1>SPACE CAPSULE</h1>
-                <p>
+                <p class="write">
                     A space capsule is an often-crewed spacecraft that uses
                     a blunt-body reentry capsule to reenter the Earth's 
                     atmosphere without wings. Our capsule is where you'll 
@@ -34,7 +37,7 @@
             <article v-else-if="showDiv===3">
                 <h4>The terminology...</h4>
                 <h1>SPACEPORT</h1>
-                <p>
+                <p class="write">
                     A spaceport or cosmodrome is a site for launching 
                     (or receiving) spacecraft, by analogy to the seaport 
                     for ships or airport for aircraft. Based in the famous 
@@ -74,7 +77,7 @@ import { ref } from 'vue'
 }
 
 html,body{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -86,8 +89,26 @@ html,body{
     background-position: center center;
     background-size: cover;
 }
+.header{
+  display: flex;
+  width: 19rem;
+  position: fixed;
+  /* background-color: black; */
+  color: white;
+  margin:9rem 0rem 0rem 10rem ;
+}
+#num{
+font-weight: bold;
+color: rgba(247, 244, 244, 0.559);
+margin-right:1rem;
+font-size: 1.3rem;
+}
+#head{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .contain{
-    margin-top: 7rem;
+    margin-top: 9rem;
     /* padding-left: 5rem; */
     width: 100%;
     height: 34rem;
@@ -115,7 +136,7 @@ h4{
     margin: 2.7rem 0rem 0rem 0rem;
     font-size: 16px;
 }
-p{
+.write{
     width: 24rem;
     height: 11rem;
     display: flex;
