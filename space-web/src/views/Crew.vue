@@ -1,12 +1,15 @@
 <template>
-<body class="body">
+<body>
+    <div class="header">
+     <p id="num">02</p><p id="head">MEET YOUR CREW</p>
+   </div>
     <div class="giant">
         <div class="hold">
     <transition name = "fade" mode="out-in">
         <div v-if= "activeDiv ===1" class="doo">
            <h2>FLIGHT ENGINEER</h2>
            <h1>ANOUSHEH ANSARI</h1> 
-                <p>
+                <p class="write">
                 Anousheh Ansari is an Iranian American engineer
                 and co-founder of Prodea Systems. Ansari was the
                 fourth self-funded space tourist, the first self-funded 
@@ -16,7 +19,7 @@
         <div v-else-if= "activeDiv ===2" class="doo">
             <h2>COMMANDER DOUGLAS</h2>
              <h1>HURLEY DOUGLAS GERALD</h1>
-             <p>
+             <p class="write">
               Hurley is an American engineer, former Marine Corps pilot and
               former NASA astronaut. He launched into space for the third
               time as commander of Crew Dragon Demo-2.
@@ -25,7 +28,7 @@
         <div v-else-if= "activeDiv ===3" class="doo">
             <h2>MISSION SPECIALIST</h2>
             <h1>MARK SHUTTLEWORTH </h1>
-            <p>
+            <p class="write">
             Mark Richard Shuttleworth is the founder and CEO of Canonical, 
             the company behind the Linux-based Ubuntu operating system. 
             Shuttleworth became the first South African to travel to space
@@ -35,7 +38,7 @@
         <div v-else-if= "activeDiv ===4" class="doo">
             <h2>PILOT</h2>
            <h1>VICTOR GLOVER</h1>
-           <p>
+           <p class="write">
              Pilot on the first operational flight of the SpaceX Crew Dragon
             to the International Space Station. 
             Glover is a commander in the U.S. Navy where he pilots an F/A-18.
@@ -44,7 +47,7 @@
             </p>
         </div>
     </transition>
-    <div class="change-pins">
+        <div class="change-pins">
         <div class="pins" @click= "showMyDiv(1)" :class = "{active:activeDiv===1}"> </div>
         <div class="pins" @click= "showMyDiv(2)" :class = "{active:activeDiv===2}"> </div>
         <div class="pins" @click= "showMyDiv(3)" :class = "{active:activeDiv===3}"> </div>
@@ -59,6 +62,7 @@
             <img class="images" v-else-if= "activeDiv ===4" src="../assets/image-victor-glover.png" alt="" srcset="">
        </transition>
     </div>
+    
     </div>
     
       
@@ -85,7 +89,7 @@ export default {
 </script>
 
 <style scoped>
-    .body{
+    body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,10 +103,29 @@ export default {
     background-size: cover;
   
 }
+.header{
+  display: flex;
+  width: 19rem;
+  position: fixed;
+  /* background-color: black; */
+  color: white;
+  margin:-23rem 0rem 0rem -41rem ;
+}
+#num{
+font-weight: bold;
+color: rgba(247, 244, 244, 0.559);
+margin-right:1rem;
+font-size: 1.3rem;
+}
+#head{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 .giant{
-    margin: 12rem  0rem  0rem  0rem;
+    position: fixed;
+    margin:13rem  0rem  0rem  0rem;
     /* background-color: orange; */
-    width: 70rem;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,33 +135,19 @@ export default {
      */
 }
 h1{
+    display: flex;
     font-size: 3.3rem;
     font-weight: 600;
     margin:1rem  0rem  3rem 0rem;
 
 }
-p{
-    /* background-color: aqua; */
+.write{
+    display: flex;
     width: 26.5rem;
     line-height: 25px;
     margin:0rem  0rem  0rem 0rem;
+}
 
-
-}
-/* .fade-enter-active {
-  transition:all 0.5s ease;
-}
-.fade-leave-active{
-  transition:all 0.5s ease-out;
-}
-.fade-enter-from {
-  opacity:0;
-  transform:translateY(80px) ;
-}
-.fade-leave-to{
-    opacity:0;
-  transform:translateY(80px) ;
-}*/
  .change-pins{
     display: flex;
     margin: 0; 
@@ -155,27 +164,27 @@ p{
     background-color: white;
 }
 .hold{
-    /* flex: 1; */
-    /* margin-right: calc(0.5vw + 5px); */
-    /* background-color: lightseagreen; */
-    width: 35rem;
+    width: 70%;
    height:25rem;
-   /* margin: 15rem 1rem 0rem 0rem; */
+   margin:auto;
+   /* background-color: lightgreen; */
 }
 .doo{
-    
-    width: 35rem;
-   height:22rem;
+    padding: 0;
+    width: 100%;
+    height:22rem;
     /* background-color: aliceblue; */
     text-align: left;
+    margin-left:auto;
 }
 .our-image{
+    margin-right: 5rem;
     align-items: center;
     justify-content: center;
 }
 .images{
-    flex: 1;
-    margin-left: calc(0.5vw + 5px);
+    /* flex: 1;
+    margin-left: calc(0.5vw + 5px); */
     width: 32rem;
     height: 32rem;
 }

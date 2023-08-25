@@ -1,5 +1,8 @@
 <template>
 <body>
+   <div class="header">
+     <p id="num">01</p><p id="head">PICK YOUR DESTINATION</p>
+   </div>
     <div class="container">
       <div class="nav">
           <div class="show">
@@ -10,7 +13,6 @@
           </div>  
         <transition name="fade" mode="out-in">
           <div v-if="showDiv ===1" class="contain">
-     
           <img src="../assets/mars-18088.png" alt="" srcset="">
           <div class="writeup">
              <h1> MARS</h1>
@@ -104,7 +106,7 @@ setup(){
 
 <style scoped>
 html,body{
-     display: flex;
+     /* display: flex; */
     align-items: center;
     justify-content: center;
     /* justify-content: flex-start;  For pushing an elemnt when reducing browser */
@@ -117,6 +119,23 @@ html,body{
     background-position: center center;
     background-size: cover;
     align-items: center;
+}
+.header{
+  display: flex;
+  width: 19rem;
+  position: fixed;
+  color: white;
+  margin:9rem 0rem 0rem 10rem ;
+}
+#num{
+font-weight: bold;
+color: rgba(247, 244, 244, 0.559);
+margin-right:1rem;
+font-size: 1.3rem;
+}
+#head{
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .fade-enter-active {
   transition:all 0.5s ease;
@@ -146,7 +165,7 @@ img{
    /* margin-left:auto ; */
   width: 80%;
   height: 25rem;
-  margin: 10rem 0rem 0rem 0rem;
+  margin: 14rem 0rem 0rem 0rem;
   /* trbl */
   color: white;
   /* background: grey;  */
