@@ -35,7 +35,6 @@ body{
 }
 .content{
   margin-top: 0;
-
 }
 .use{
   display: flex;
@@ -47,6 +46,16 @@ body{
  padding: 0;
  margin: 2rem 4rem 2rem 3rem;
  /* trbl */
+}
+@media screen and (min-width: 720px) and (max-width:768px){
+  .icon{
+ position: absolute;
+ width:47px;
+ color: white;
+ padding: 0;
+ margin: 1rem 5rem 2rem 2rem;
+ /* trbl */
+}
 }
 /* .body{
   height: 100vh;

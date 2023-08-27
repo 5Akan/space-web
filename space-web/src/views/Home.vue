@@ -32,8 +32,8 @@ export default {
 </script>
 
 <style scoped>
-
-  body{
+@media screen and (min-width: 768px) and (max-width:1440px){
+   body{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -85,5 +85,65 @@ h2{
   font-weight: 200;
   font-size: 28px;
 }
-
+}
+ 
+/* Tablet Size */
+@media screen and (min-width: 720px) and (max-width:768px){
+   body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+  display: inline-block;
+  position: relative;
+  width: 30rem;
+  height: 100%;
+  margin: 5rem 1rem 1rem 1rem;
+  color: white;
+  background: grey;
+}
+.space{
+  width:26rem;
+  /* background: white; */
+  color: white;
+  text-align: center;
+}
+h1{
+  font-weight: 200;
+  font-size:28px;
+  padding: 1.5rem 0rem 1.9rem 0rem;
+}
+h3{
+  font-weight: 500;
+  font-size: 23px;
+}
+p{
+  font-size: 16px;
+  line-height: 22px;
+}
+.explore{
+  position: inherit;
+  display: flex;
+  height: 14rem;
+  border-radius: 50%;
+  width: 14rem;
+  color: black;
+  background-color: white;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+h2{
+  font-weight: 200;
+  font-size: 28px;
+}
+}
 </style>
