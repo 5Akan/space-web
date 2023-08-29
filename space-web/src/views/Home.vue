@@ -103,47 +103,59 @@ h2{
 .container{
   display: inline-block;
   position: relative;
-  width: 30rem;
-  height: 100%;
-  margin: 5rem 1rem 1rem 1rem;
+  width: 34rem;
+  height: 80%;
+  margin: 13rem 1rem 1rem 1rem;
   color: white;
-  background: grey;
-}
-.space{
-  width:26rem;
-  /* background: white; */
-  color: white;
+  /* background: grey; */
+  align-items: center;
+  justify-content: center ;
   text-align: center;
 }
+.space{
+  width:100%;
+  /* background: rgb(231, 143, 143); */
+  color: white;
+   align-items: center;
+  justify-content: center ;
+  text-align: center;
+  margin-bottom: 8rem;
+}
 h1{
-  font-weight: 200;
-  font-size:28px;
-  padding: 1.5rem 0rem 1.9rem 0rem;
+  font-weight: 100;
+  font-size:10rem;
+  padding: 1rem 0rem 1rem 0rem;
 }
 h3{
   font-weight: 500;
-  font-size: 23px;
+  font-size: 20px;
 }
 p{
-  font-size: 16px;
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
   line-height: 22px;
+  margin-bottom: 1rem;
 }
 .explore{
-  position: inherit;
-  display: flex;
-  height: 14rem;
+  display: inline-block;
+  height: 12rem;
   border-radius: 50%;
-  width: 14rem;
+  width: 12rem;
   color: black;
   background-color: white;
   margin: 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: center center;
+  text-align: center center;
   padding: 0;
 }
 h2{
+    margin-top: 5rem;
+    display: block;
   font-weight: 200;
   font-size: 28px;
+  text-align: center;
 }
 }
 </style>
