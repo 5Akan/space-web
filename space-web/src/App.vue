@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
 import Nav from './views/Nav.vue';
 
 export default {
