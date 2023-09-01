@@ -37,6 +37,13 @@ import { ref } from "vue";
 
   <style scoped>
   @media screen and (min-width: 768px) and (max-width:1440px){
+
+    .hamburger{
+      display: none;
+    }
+    .sub-menu{
+      display: none;
+    }
         nav {
     position: fixed;
     top: 0;
@@ -98,6 +105,12 @@ import { ref } from "vue";
     }
     hr{
     display: none;
+    }
+    .hamburger{
+      display: none;
+    }
+    .sub-menu{
+      display: none;
     }
 }
 
