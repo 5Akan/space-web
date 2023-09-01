@@ -125,7 +125,7 @@ import { ref } from "vue";
     .hamburger{
       width: 2.5rem;
       position: fixed;
-      margin-left: 93%;
+      margin-left: 89%;
       margin-top: 2rem;
     }
     .sub-menu{
