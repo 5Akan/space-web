@@ -164,7 +164,7 @@ h2{
      display: block;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 425px;
     height: 100vh;
     align-items: center;
     justify-content: center;
