@@ -160,9 +160,11 @@ h2{
 }
 
 @media screen and (max-width:720px){
-   body{
+   html,body{
+     display: block;
     margin: 0;
     padding: 0;
+    width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
