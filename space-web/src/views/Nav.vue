@@ -6,13 +6,33 @@
     <router-link :to = "{name: 'crew',params:{id:2}}"><b>02</b> CREW</router-link>
     <router-link :to = "{name: 'technology',params:{id:3}}"><b>03</b> TECHNOLOGY</router-link>
   </nav>
+
+                        
+           <div class="sub-menu" v-if= "showimg ===2">
+              <ul>
+                 <li> <router-link to="/"><b>00</b> HOME</router-link></li>
+                 <li> <router-link :to = "{name: 'destination',params:{id:1}}"><b>01</b> DESTINATION</router-link></li>
+                 <li><router-link :to = "{name: 'crew',params:{id:2}}"><b>02</b> CREW</router-link></li>
+                 <li><router-link :to = "{name: 'technology',params:{id:3}}"><b>03</b> TECHNOLOGY</router-link></li>
+              </ul>
+           </div>
+                  
+  
   <hr><hr/>
+  <transition name="fade" mode="in-out">
+    <img v-if= "showimg ===1" @click="showSpecificImg(2)" src="../assets/icon-hamburger.svg" alt="" srcset="" class="hamburger">
+     <img v-else-if= "showimg ===2" @click="showSpecificImg(1)" src="../assets/icon-close.svg" alt="" srcset="" class="hamburger">
+    </transition>
 </template>
 
-<script>
-export default {
+<script setup>
+import { ref } from "vue";
 
-}
+  const showimg = ref(1);
+
+  const showSpecificImg = (num) => {
+    showimg.value = num;
+  }
 </script>
 
   <style scoped>
@@ -78,6 +98,49 @@ export default {
     }
     hr{
     display: none;
+    }
+}
+
+@media screen and (max-width:720px){
+  nav {
+    display: none;
+    }
+
+    hr{
+    display: none;
+    }
+    .hamburger{
+      width: 2.5rem;
+      position: fixed;
+      margin-left: 93%;
+      margin-top: 2rem;
+    }
+    .sub-menu{
+      background-color: rgba(158, 172, 188, 0.457);
+      position: fixed;
+      margin-left: 77%;
+      margin-top: 5rem;
+      text-align: left;
+      border-radius: 4px 4px;
+      width: 9rem;
+    }
+    .sub-menu a{
+      padding-left: 4px;
+      margin-bottom: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+     .sub-menu a.router-link-exact-active{
+       color: rgba(54, 139, 171, 0.857);
+      
+     }
+
+    .sub-menu li{
+      padding: 1px;
+       list-style: none;
+       margin-bottom: 0.8rem;
+     
     }
 }
 

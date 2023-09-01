@@ -158,4 +158,75 @@ h2{
   text-align: center;
 }
 }
+
+@media screen and (max-width:720px){
+   body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+  display: inline-block;
+  position: relative;
+  width: 34rem;
+  height: 80%;
+  margin: 13rem 1rem 1rem 1rem;
+  color: white;
+  /* background: grey; */
+  align-items: center;
+  justify-content: center ;
+  text-align: center;
+}
+.space{
+  width:100%;
+  /* background: rgb(231, 143, 143); */
+  color: white;
+   align-items: center;
+  justify-content: center ;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+h1{
+  font-weight: 100;
+  font-size:10rem;
+  padding: 1rem 0rem 1rem 0rem;
+}
+h3{
+  font-weight: 500;
+  font-size: 20px;
+}
+p{
+  width: 90%;
+  margin: auto;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+.explore{
+  display: inline-block;
+  height: 12rem;
+  border-radius: 50%;
+  width: 12rem;
+  color: black;
+  background-color: white;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center center;
+  text-align: center center;
+  padding: 0;
+}
+h2{
+    margin-top: 5rem;
+    display: block;
+  font-weight: 200;
+  font-size: 28px;
+  text-align: center;
+}
+}
 </style>
