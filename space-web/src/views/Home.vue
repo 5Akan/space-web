@@ -169,7 +169,7 @@ h2{
   
 }
    html,body{
-     display: block;
+    display: block;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -186,7 +186,7 @@ h2{
   position: relative;
   width: 100%;
   height: 80%;
-  margin: 10rem 1rem 1rem 1rem;
+  margin: 10rem 0rem 1rem 0rem;
   color: white;
   /* background: grey; */
   align-items: center;
@@ -197,7 +197,7 @@ h2{
   width:100%;
   /* background: rgb(231, 143, 143); */
   color: white;
-   align-items: center;
+  align-items: center;
   justify-content: center ;
   text-align: center;
   margin-bottom: 6rem;
