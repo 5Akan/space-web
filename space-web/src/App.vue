@@ -58,6 +58,16 @@ body{
  /* trbl */
 }
 }
+@media screen and (max-width:720px){
+  .icon{
+  position: absolute;
+  width:47px;
+  color: white;
+  padding: 0;
+  margin: 1rem 5rem 2rem 1rem;
+  /* t r b l */
+  }
+}
 /* .body{
   height: 100vh;
   width: 100%;

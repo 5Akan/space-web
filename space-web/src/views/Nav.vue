@@ -21,7 +21,7 @@
   <hr><hr/>
   <transition name="fade" mode="in-out">
     <img v-if= "showimg ===1" @click="showSpecificImg(2)" src="../assets/icon-hamburger.svg" alt="" srcset="" class="hamburger">
-     <img v-else-if= "showimg ===2" @click="showSpecificImg(1)" src="../assets/icon-close.svg" alt="" srcset="" class="hamburger">
+     <img v-else-if= "showimg ===2" @click="showSpecificImg(1)" src="../assets/icon-close.svg" alt="" srcset="" class="close">
     </transition>
 </template>
 
@@ -36,7 +36,7 @@ import { ref } from "vue";
 </script>
 
   <style scoped>
-  @media screen and (min-width: 768px) and (max-width:1440px){
+@media screen and (min-width: 768px) and (max-width:1440px){
 
     .hamburger{
       display: none;
@@ -113,7 +113,6 @@ import { ref } from "vue";
       display: none;
     }
 }
-
 @media screen and (max-width:720px){
   nav {
     display: none;
@@ -125,30 +124,39 @@ import { ref } from "vue";
     .hamburger{
       width: 2.5rem;
       position: fixed;
-      margin-left: 89%;
+      margin-left: 87%;
       margin-top: 2rem;
     }
-    .sub-menu{
-      background-color: rgba(158, 172, 188, 0.457);
+    .close{
+      width: 2.5rem;
       position: fixed;
-      margin-left: 77%;
-      margin-top: 5rem;
+      margin-left: 87%;
+      margin-top: 2rem;
+
+    }
+    .sub-menu{
+      background-color: rgb(224, 228, 233);
+      position: fixed;
+       width: 100%;
+       height: 40%;
       text-align: left;
       border-radius: 4px 4px;
-      width: 9rem;
+      /* width: 9rem; */
+    }
+    .sub-menu ul{
+      margin-top: 5rem;
     }
     .sub-menu a{
       padding-left: 4px;
       margin-bottom: 1rem;
-      color: white;
+      color: black;
       text-decoration: none;
+      font-size: 20px;
     }
 
      .sub-menu a.router-link-exact-active{
        color: rgba(54, 139, 171, 0.857);
-      
      }
-
     .sub-menu li{
       padding: 1px;
        list-style: none;
