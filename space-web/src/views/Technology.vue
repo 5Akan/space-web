@@ -92,7 +92,7 @@ html,body{
 .header{
   display: flex;
   width: 19rem;
-  position: fixed;
+  /* position: fixed; */
   /* background-color: black; */
   color: white;
   margin:9rem 0rem 0rem 10rem ;
@@ -108,7 +108,7 @@ font-size: 1.3rem;
   font-weight: bold;
 }
 .contain{
-    margin-top: 9rem;
+    margin-top: -1rem;
     /* padding-left: 5rem; */
     width: 100%;
     height: 34rem;

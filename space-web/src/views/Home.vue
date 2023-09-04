@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 768px) and (max-width:1440px){
+@media screen and (min-width: 800px) and (max-width:1440px){
    body{
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ h2{
 }
  
 /* Tablet Size */
-@media screen and (min-width: 720px) and (max-width:768px){
+@media screen and (min-width: 720px) and (max-width:800px){
    body{
     margin: 0;
     padding: 0;
@@ -183,7 +183,7 @@ h2{
 }
 .container{
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: 80%;
   margin: 10rem 0rem 1rem 0rem;
