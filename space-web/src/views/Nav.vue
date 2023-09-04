@@ -35,8 +35,8 @@ import { ref } from "vue";
   }
 </script>
 
-  <style scoped>
-@media screen and (min-width: 768px) and (max-width:1440px){
+  <style >
+@media screen and (min-width: 800px) and (max-width:1440px){
 
     .hamburger{
       display: none;
@@ -78,7 +78,7 @@ import { ref } from "vue";
       border: 0.3px solid white;
     }
   }
-@media screen and (min-width: 720px) and (max-width:768px){
+@media screen and (min-width: 720px) and (max-width:800px){
     nav {
     position: fixed;
     top: 0;
@@ -135,10 +135,11 @@ import { ref } from "vue";
 
     }
     .sub-menu{
-      background-color: rgb(224, 228, 233);
-      position: fixed;
+
+     background: linear-gradient(90deg, rgba(2, 0, 36, 0.698) 0%, rgba(63, 63, 209, 0.874) 48%, rgba(0,212,255,1) 100%);
+      position: absolute;
        width: 100%;
-       height: 40%;
+       height: 16rem;
       text-align: left;
       border-radius: 4px 4px;
       /* width: 9rem; */
@@ -149,7 +150,7 @@ import { ref } from "vue";
     .sub-menu a{
       padding-left: 4px;
       margin-bottom: 1rem;
-      color: black;
+      color: rgb(249, 246, 253);
       text-decoration: none;
       font-size: 20px;
     }
@@ -160,7 +161,7 @@ import { ref } from "vue";
     .sub-menu li{
       padding: 1px;
        list-style: none;
-       margin-bottom: 0.8rem;
+       margin-bottom: 1rem;
      
     }
 }

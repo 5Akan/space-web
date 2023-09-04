@@ -123,7 +123,7 @@ html,body{
 .header{
   display: flex;
   width: 19rem;
-  position: fixed;
+  /* position: fixed; */
   color: white;
   margin:9rem 0rem 0rem 10rem ;
 }
@@ -165,7 +165,7 @@ img{
    /* margin-left:auto ; */
   width: 80%;
   height: 25rem;
-  margin: 14rem 0rem 0rem 0rem;
+  margin: 4rem 0rem 0rem 0rem;
   /* trbl */
   color: white;
   /* background: grey;  */
