@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 800px) and (max-width:1440px){
+@media screen and (min-width: 863px) and (max-width:1440px){
    body{
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ h2{
 }
  
 /* Tablet Size */
-@media screen and (min-width: 720px) and (max-width:800px){
+@media screen and (min-width: 720px) and (max-width:863px){
    body{
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ h2{
   position: relative;
   width: 34rem;
   height: 80%;
-  margin: 13rem 1rem 1rem 1rem;
+  margin: 10rem 1rem 1rem 1rem;
   color: white;
   /* background: grey; */
   align-items: center;
@@ -119,7 +119,7 @@ h2{
    align-items: center;
   justify-content: center ;
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 h1{
   font-weight: 100;

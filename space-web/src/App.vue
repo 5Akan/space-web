@@ -48,7 +48,7 @@ body{
  margin: 2rem 4rem 2rem 3rem;
  /* trbl */
 }
-@media screen and (min-width: 720px) and (max-width:768px){
+@media screen and (min-width: 720px) and (max-width:826px){
   .icon{
  position: absolute;
  width:47px;

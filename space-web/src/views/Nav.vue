@@ -36,7 +36,7 @@ import { ref } from "vue";
 </script>
 
   <style >
-@media screen and (min-width: 800px) and (max-width:1440px){
+@media screen and (min-width: 863px) and (max-width:1440px){
 
     .hamburger{
       display: none;
@@ -78,7 +78,7 @@ import { ref } from "vue";
       border: 0.3px solid white;
     }
   }
-@media screen and (min-width: 720px) and (max-width:800px){
+@media screen and (min-width: 720px) and (max-width:863px){
     nav {
     position: fixed;
     top: 0;
