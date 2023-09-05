@@ -5,16 +5,18 @@
    </div>
     <div class="container">
       <div class="nav">
-          <div class="show">
-              <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
-              <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
-              <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">EUROPA </span>
-              <span id="show-span" @click="showSpecificDiv(4)" :class = "{active:showDiv ===4}">TITAN</span>
-          </div>  
+          
         <transition name="fade" mode="out-in">
           <div v-if="showDiv ===1" class="contain">
           <img src="../assets/mars-18088.png" alt="" srcset="">
-          <div class="writeup">
+           <div class="show">
+              <div class="span">
+                 <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
+                <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
+                <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">EUROPA </span>
+                <span id="show-span" @click="showSpecificDiv(4)" :class = "{active:showDiv ===4}">TITAN</span>
+            </div>
+               <div class="writeup">
              <h1> MARS</h1>
                 <p>
                   Don’t forget to pack your hiking boots. 
@@ -28,28 +30,46 @@
                 <span>Est. travel time <h2>9 months</h2> </span>
               </div>
           </div>
+          </div>  
+         
         </div>
          <div v-else-if="showDiv ===2" class="contain">
         <img src="../assets/moon-10061.png" alt="" srcset="">
-          <div class="writeup">
-              <h1> MOON</h1>
-            <p>
-              See our planet as you’ve never seen it 
-              before. A perfect relaxing trip away to help
-              regain perspective and come back refreshed.
-              While you’re there, take in some history by 
-              visiting the Luna 2 and Apollo 11 landing sites.
-            </p> 
-              <hr class="line"> 
-              <div class="writeup-bottom">
-                  <span>Avg. distance <h2>384,400 km</h2> </span>
-                  <span>Est. travel time <h2>3 days</h2> </span>
-            </div> 
+        <div class="show">
+                <div class="span">
+              <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
+                <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
+                <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">EUROPA </span>
+                <span id="show-span" @click="showSpecificDiv(4)" :class = "{active:showDiv ===4}">TITAN</span>
+            </div>
+                <div class="writeup">
+                <h1> MOON</h1>
+              <p>
+                See our planet as you’ve never seen it 
+                before. A perfect relaxing trip away to help
+                regain perspective and come back refreshed.
+                While you’re there, take in some history by 
+                visiting the Luna 2 and Apollo 11 landing sites.
+              </p> 
+                <hr class="line"> 
+                <div class="writeup-bottom">
+                    <span>Avg. distance <h2>384,400 km</h2> </span>
+                    <span>Est. travel time <h2>3 days</h2> </span>
+              </div> 
+            </div>  
           </div>  
+          
           </div>
             <div v-else-if="showDiv ===3" class="contain">
         <img src="../assets/image-europa.png" alt="" srcset="">
-         <div class="writeup">
+        <div class="show">
+          <div class="span">
+             <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
+              <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
+              <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">EUROPA </span>
+              <span id="show-span" @click="showSpecificDiv(4)" :class = "{active:showDiv ===4}">TITAN</span>
+          </div>
+              <div class="writeup">
             <h1>EUROPA</h1>
           <p>
             The smallest of the four Galilean 
@@ -65,10 +85,19 @@
                 <span>Est. travel time <h2>3 years</h2> </span>
           </div> 
          </div>  
+          </div>  
+         
           </div>
             <div v-else-if="showDiv ===4" class="contain">
         <img src="../assets/image-titan.png" alt="" srcset="">
-         <div class="writeup">
+        <div class="show">
+               <div class="span">
+                  <span id="show-span" @click="showSpecificDiv(1)" :class = "{active:showDiv ===1}">MARS</span>
+                  <span id="show-span" @click="showSpecificDiv(2)" :class = "{active:showDiv ===2}">MOON</span>
+                  <span id="show-span" @click="showSpecificDiv(3)" :class = "{active:showDiv ===3}">EUROPA </span>
+                  <span id="show-span" @click="showSpecificDiv(4)" :class = "{active:showDiv ===4}">TITAN</span>
+          </div>
+              <div class="writeup">
             <h1>TITAN</h1>
           <p>
             Titan The only moon known to have a dense 
@@ -81,7 +110,9 @@
             <div class="writeup-bottom">
                 <span>Avg. distance <h2>1.6 bil.</h2> </span>
                 <span>Est. travel time <h2>7 years</h2> </span>
-          </div> 
+          </div>
+          </div>  
+          
          </div>  
           </div>
         </transition>
@@ -165,7 +196,7 @@ img{
   display: flex;
   justify-content: flex-start;
    /* margin-left:auto ; */
-  width: 80%;
+  width: 100%;
   height: 25rem;
   margin: 4rem 0rem 0rem 0rem;
   /* trbl */
@@ -179,9 +210,17 @@ img{
 }
 .show{
  /* background-color: orange; */
- width: 18rem;
+ width: 35rem;
  height: 2rem;
- margin-left: 40rem;
+ margin-right: 15rem;
+ 
+}
+.span{
+   /* background-color: orange; */
+  width: 20rem;
+  height: 2rem;
+  margin-left: 12rem;
+
 }
 #show-span{
   /* trbl */
@@ -204,7 +243,7 @@ img{
   color: white;
   /* background-color: rgb(91, 128, 128); */
   width: 25rem;
-  margin-left: 9rem;
+  margin-left: 15rem;
   text-align: left;
 }
 .line{
@@ -307,10 +346,20 @@ img{
   /* background-color: darkslategray; */
 }
 .show{
- background-color: orange;
- width: 18rem;
- height: 2rem;
- margin-left: 40rem;
+  display: inline-block;
+ background-color: brown;
+ width: 100%;
+ height: 25rem;
+ text-align: center;
+ align-items: center;
+ /* margin-left: 40rem; */
+ /* margin-top: 20rem; */
+}
+.span{
+  display: inline-block;
+  background-color: yellow;
+   width: 20rem;
+  height: 2rem;
 }
 #show-span{
   /* trbl */
@@ -325,13 +374,14 @@ img{
   display: inline-block;
   width: 100%;
   height:25rem;
-  /* background: lightblue; */
+  background: lightblue;
+  text-align: center;
    /* padding-left: 5rem; */
 }
 
 .writeup{
   color: white;
-  /* background-color: rgb(91, 128, 128); */
+  background-color: rgb(91, 128, 128);
   width: 25rem;
   margin-left: 9rem;
   text-align: left;
