@@ -81,15 +81,14 @@ export default {
            activeDiv.value = num ;
            
         }
-       
-
         return{ activeDiv,showMyDiv}
     }
 }
 </script>
 
 <style scoped>
-    body{
+@media screen and (min-width: 863px) and (max-width:1440px){
+      body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,4 +187,109 @@ h1{
     width: 32rem;
     height: 32rem;
 }
+}
+
+/* Tablet Size */
+@media screen and (min-width: 720px) and (max-width:863px){
+    html,body{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* justify-content: flex-start;  */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(../assets/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  
+}
+.header{
+  display: flex;
+  width: 19rem;
+  /* position: fixed; */
+  color: white;
+  margin:9rem 0rem 0rem 2rem ;
+}
+#num{
+font-weight: bold;
+color: rgba(247, 244, 244, 0.559);
+margin-right:1rem;
+font-size: 1.3rem;
+}
+#head{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.giant{
+    /* position: fixed; */
+    margin:8rem  0rem  0rem  0rem;
+    /* background-color: orange; */
+    width: 80%;
+    display: inline-block;
+    align-items: center;
+    color: white;
+    /* margin-right: auto;
+    margin-left: auto;
+     */
+}
+.hold{
+    display: inline-block;
+    width: 70%;
+   height:25rem;
+   margin:auto;
+   /* background-color: lightgreen; */
+}
+h1{
+    display: flex;
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin:1rem  0rem  3rem 0rem;
+
+}
+.write{
+    display: flex;
+    width: 26.5rem;
+    line-height: 25px;
+    margin:0rem  0rem  0rem 0rem;
+}
+
+ .change-pins{
+    display: flex;
+    margin: 0; 
+} 
+.pins{
+    margin: 8px 10px 8px 8px;
+    position: relative;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 6.5px;
+    cursor: pointer;
+}
+.active{
+    background-color: white;
+}
+
+.doo{
+    padding: 0;
+    width: 100%;
+    height:22rem;
+    background-color: rgb(206, 30, 133);
+    text-align: left;
+    margin-left:auto;
+}
+.our-image{
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    /* flex: 1;
+    margin-left: calc(0.5vw + 5px); */
+    width: 32rem;
+    height: 32rem;
+}  
+}
+  
 </style>

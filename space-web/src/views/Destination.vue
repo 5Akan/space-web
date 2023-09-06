@@ -416,6 +416,7 @@ img{
     text-decoration: underline 2.4px;
 }
 }
+/* Phone Size */
 @media screen and (max-width:720px){
   html,body{
      /* display: flex; */
