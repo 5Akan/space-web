@@ -265,7 +265,7 @@ img{
 }
 .writeup-bottom{
   width: 100%;
-   padding: 0rem 5rem 1.3rem 0rem;
+   padding: 0rem 0rem 1.3rem 0rem;
    display: flex;
    justify-content: space-between;
 
@@ -338,7 +338,7 @@ img{
   margin: 4rem 0rem 0rem 0rem;
   /* trbl */
   color: white;
-  background: grey; 
+  /* background: grey;  */
 }
 .nav{
   display: block;
@@ -347,24 +347,24 @@ img{
 }
 .show{
   display: inline-block;
- background-color: brown;
+ /* background-color: brown; */
  width: 100%;
  height: 25rem;
  text-align: center;
  align-items: center;
  /* margin-left: 40rem; */
- /* margin-top: 20rem; */
+ margin-top: 4rem;
 }
 .span{
   display: inline-block;
-  background-color: yellow;
+  /* background-color: yellow; */
    width: 20rem;
   height: 2rem;
 }
 #show-span{
   /* trbl */
   padding: 0rem 0.5rem   0rem   0.5rem  ;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.7rem;
   cursor: pointer;
 }
 #show-span:hover{
@@ -374,17 +374,17 @@ img{
   display: inline-block;
   width: 100%;
   height:25rem;
-  background: lightblue;
+  /* background: lightblue; */
   text-align: center;
    /* padding-left: 5rem; */
 }
 
 .writeup{
   color: white;
-  background-color: rgb(91, 128, 128);
+  /* background-color: rgb(91, 128, 128); */
   width: 25rem;
   margin-left: 9rem;
-  text-align: left;
+  text-align: center;
 }
 .line{
   position: inherit;
@@ -404,8 +404,154 @@ img{
   padding: 0rem 1.3rem 0rem 0rem;
 }
 .writeup-bottom{
+  text-align: left;
   width: 100%;
    padding: 0rem 5rem 1.3rem 0rem;
+   display: flex;
+   justify-content: space-between;
+
+}
+.active{
+    color: white;
+    text-decoration: underline 2.4px;
+}
+}
+@media screen and (max-width:720px){
+  html,body{
+     /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* justify-content: flex-start;  For pushing an elemnt when reducing browser */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-items: center;
+}
+.header{
+  display: flex;
+  width: 100%;
+  /* background-color: blue; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* position: fixed; */
+  color: white;
+  margin:6rem 0rem 0rem 0rem ;
+}
+#num{
+  /* display: inherit; */
+font-weight: bold;
+color: rgba(247, 244, 244, 0.559);
+/* margin-right:1rem; */
+font-size: 1.2rem;
+}
+#head{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.fade-enter-active {
+  transition:all 0.5s ease;
+}
+.fade-leave-active{
+  transition:all 0.5s ease-out;
+}
+.fade-enter-from {
+  opacity:0;
+  transform:translateY(80px) ;
+}
+.fade-leave-to{
+    opacity:0;
+  transform:translateY(-80px) ;
+}
+img{
+  /* margin-left: 4rem; */
+  padding: 0;
+  width: 15rem;
+  height: 15rem;
+  margin-left:auto; /* Allows image to shift to left due to justify content: flex start */
+}
+.container{
+  display: inline-block;
+   /* margin-left:auto ; */
+  width: 80%;
+  height:57rem;
+  margin: 2rem 0rem 0rem 0rem;
+  /* trbl */
+  color: white;
+  /* background: grey;  */
+}
+.nav{
+  display: block;
+  width: 100%;
+  /* background-color: darkslategray; */
+}
+.show{
+  display: inline-block;
+ /* background-color: brown; */
+ width: 100%;
+ height: 25rem;
+ text-align: center;
+ align-items: center;
+ /* margin-left: 40rem; */
+ margin-top: 1rem;
+}
+.span{
+  display: inline-block;
+  /* background-color: yellow; */
+   width: 20rem;
+  height: 2rem;
+}
+#show-span{
+  /* trbl */
+  padding: 0rem 0.5rem   0rem   0.5rem  ;
+  text-underline-offset: 0.7rem;
+  cursor: pointer;
+}
+#show-span:hover{
+  color: lightgrey;
+}
+.contain{
+  display: inline-block;
+  width: 100%;
+  height:25rem;
+  /* background: lightblue; */
+  text-align: center;
+   /* padding-left: 5rem; */
+}
+
+.writeup{
+  color: white;
+  /* background-color: rgb(91, 128, 128); */
+  width: 21rem;
+  /* margin-left: 9rem; */
+  text-align: center;
+}
+.line{
+  position: inherit;
+  margin: 2.7rem 0rem 1rem 0rem;
+  opacity: 1;
+  border: 1px solid white;
+  width: 100%;
+}
+.writeup h1{
+  font-weight: 200;
+  font-size:88px;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+}
+.writeup p{
+  line-height: 20px;
+  font-size: 15px;
+  padding: 0rem 1.3rem 0rem 0rem;
+}
+.writeup-bottom{
+  text-align: left;
+  width: 100%;
+   padding:1rem 0rem 1.3rem 0rem;
    display: flex;
    justify-content: space-between;
 
