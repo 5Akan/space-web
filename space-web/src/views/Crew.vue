@@ -6,7 +6,10 @@
     <div class="giant">
         <div class="hold">
     <transition name = "fade" mode="out-in">
-        <div v-if= "activeDiv ===1" class="doo">
+        <div v-if= "activeDiv ===1" class="doo" 
+        @touchstart = "showMyDiv(1)"
+         @touchmove = "showMyDiv(2)" 
+         @touchstop = "showMyDiv(2)">
            <h2>FLIGHT ENGINEER</h2>
            <h1>ANOUSHEH ANSARI</h1> 
                 <p class="write">
@@ -16,7 +19,10 @@
                 woman to fly to the ISS, and the first Iranian in space.
                 </p>
         </div>
-        <div v-else-if= "activeDiv ===2" class="doo">
+        <div v-else-if= "activeDiv ===2" class="doo"
+         @touchstart = "showMyDiv(2)"
+         @touchmove = "showMyDiv(3)" 
+         @touchstop = "showMyDiv(3)">
             <h2>COMMANDER DOUGLAS</h2>
              <h1>HURLEY DOUGLAS GERALD</h1>
              <p class="write">
@@ -224,7 +230,7 @@ font-size: 1.3rem;
 }
 .giant{
     /* position: fixed; */
-    margin:8rem  0rem  0rem  0rem;
+    margin:2.4rem  0rem  0rem  0rem;
     /* background-color: orange; */
     width: 80%;
     display: inline-block;
@@ -243,14 +249,17 @@ font-size: 1.3rem;
 }
 h1{
     display: flex;
-    font-size: 3.3rem;
-    font-weight: 600;
-    margin:1rem  0rem  3rem 0rem;
+    font-size: 3rem;
+    font-weight: 200;
+    margin:1rem  0rem  2rem 0rem;
 
+}
+h2{
+    font-weight: 100;
+    font-size: 1.7rem;
 }
 .write{
     display: flex;
-    width: 26.5rem;
     line-height: 25px;
     margin:0rem  0rem  0rem 0rem;
 }
@@ -258,6 +267,8 @@ h1{
  .change-pins{
     display: flex;
     margin: 0; 
+    align-items: center;
+    justify-content: center;
 } 
 .pins{
     margin: 8px 10px 8px 8px;
@@ -274,21 +285,21 @@ h1{
 .doo{
     padding: 0;
     width: 100%;
-    height:22rem;
-    background-color: rgb(206, 30, 133);
-    text-align: left;
+    height:18rem;
+    /* background-color: rgb(206, 30, 133); */
+    text-align: center;
     margin-left:auto;
 }
 .our-image{
-    margin-right: 5rem;
+    margin-top:-3rem;
     align-items: center;
     justify-content: center;
 }
 .images{
     /* flex: 1;
     margin-left: calc(0.5vw + 5px); */
-    width: 32rem;
-    height: 32rem;
+    width: 35rem;
+    height: 35rem;
 }  
 }
   
